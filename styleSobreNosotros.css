@@ -1,0 +1,288 @@
+/* Header NAV */
+header,
+.hero-nav,
+.hero-nav-li {
+  max-width: 100vw;
+}
+
+.hamburg-nav {
+  display: none;
+}
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 3px 3px rgba(185, 179, 179, 0.342);
+}
+
+.nav-li {
+  display: flex;
+  gap: 1rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.hero-nav-li {
+  text-decoration: none;
+  font-size: 18.5px;
+  list-style: none;
+  font-weight: 500;
+  padding: 0.8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.hero-nav-li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #66cc00;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero-nav-li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.donate {
+  background-color: #66cc00;
+  font-weight: bold;
+  color: white;
+}
+
+.donate:hover {
+  background-color: #66cc007a;
+}
+
+.nav-logo {
+  margin-left: 1rem;
+  width: 150px;
+}
+
+.nav-logo img {
+  width: 100px;
+  height: 60px;
+}
+
+.hero-nav-li.search {
+  margin-left: 1rem;
+  padding: 0.45rem;
+}
+
+/* Sobre Nosotros */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.card-sobre-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-sobre-nosotros-text {
+  flex: 1;
+  margin-right: 1rem; /* Espacio entre texto e imagen */
+  text-align: justify; /* Justificar texto */
+}
+
+.card-image-sobre-nosotros {
+  flex: 1;
+  margin-left: 1rem; /* Espacio entre imagen y texto */
+}
+
+.card-image-sobre-nosotros img {
+  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  height: auto; /* Altura automática según el ancho */
+}
+
+.card-sobre-nosotros p {
+  font-size: 20px; /* Tamaño del párrafo */
+  line-height: 1.6; /* Altura de línea */
+}
+
+.card-sobre-nosotros-extra {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Para que las tarjetas se envuelvan en dispositivos más pequeños */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card-extra {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Ancho máximo de cada tarjeta */
+  overflow: hidden; /* Para asegurar que la imagen ocupe todo el espacio */
+}
+
+.card-extra img {
+  width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+  height: auto; /* Altura automática según el ancho */
+  display: block; /* Asegura que la imagen se comporte correctamente */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo del texto */
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-extra h5 {
+  font-size: 20px; /* Tamaño de letra para el título aumentado */
+  margin-bottom: 10px; /* Espacio inferior para separar el título del texto */
+}
+
+.card-extra p {
+  font-size: 16px; /* Tamaño de letra para la descripción aumentado */
+  line-height: 1.4; /* Espaciado entre líneas */
+  margin-bottom: 15px; /* Espacio inferior para separar los párrafos */
+}
+/* Footer */
+footer {
+  background-color: #1f4912;
+  width: 100%;
+  margin: 0;
+  margin-top: 4rem;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ul-footer-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 200px;
+}
+
+.li-footer-info {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.ul-footer-info-red {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 200px;
+}
+
+.li-footer-info svg {
+  width: 40px;
+  fill: white;
+  height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-sobre-nosotros-extra {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-extra {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .card-text {
+    position: static;
+    background-color: initial;
+    color: initial;
+    padding: 10px;
+    opacity: 1;
+    transition: none;
+  }
+
+  .card-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-sobre-nosotros-text,
+  .card-image-sobre-nosotros {
+    width: 100%;
+    margin: 0; /* Eliminar los márgenes laterales */
+  }
+
+  .hero-nav {
+    box-shadow: 3px 3px 3px 3px rgba(185, 179, 179, 0.342);
+  }
+
+  .nav-li {
+    display: none;
+  }
+
+  .hero-nav {
+    box-shadow: 3px 3px 3px 3px rgba(185, 179, 179, 0.342);
+  }
+
+  .nav-li {
+    display: none;
+  }
+
+  .nav-li.activeHamburgues {
+    transition: all 0.3s ease-in;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.15rem;
+    width: 150px;
+    top: 64px;
+    background-color: #fcffff;
+    box-shadow: 3px 3px 3px 0px rgba(185, 179, 179, 0.342);
+    z-index: 3;
+  }
+
+  .hamburg-nav {
+    display: flex;
+    width: 30px;
+    margin-right: 1rem;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .ul-footer-info-red {
+    flex-direction: column;
+  }
+
+  .ul-footer-info {
+    gap: 1rem;
+    margin: 0.5rem;
+  }
+
+  .li-footer-info svg {
+    width: 30px;
+    height: 30px;
+  }
+}
