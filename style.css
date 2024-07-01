@@ -15,7 +15,6 @@ header,
 .hero-nav,
 .hero-nav-li {
   max-width: 100vw;
- 
 }
 .hamburg-nav {
   display: none;
@@ -71,6 +70,9 @@ a {
 .nav-logo {
   margin-left: 1rem;
   width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo img {
   width: 100px;
@@ -286,7 +288,207 @@ footer {
 
 .card-text p {
   margin: 0.5rem 0 0;
-  color: #333;
+}
+/* ------------------------Sobre nosotros -----------------------------*/
+/* Sobre Nosotros */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+
+.card-sobre-nosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-sobre-nosotros-text {
+  flex: 1;
+  margin-right: 1rem; /* Espacio entre texto e imagen */
+  text-align: justify; /* Justificar texto */
+}
+
+.card-image-sobre-nosotros {
+  flex: 1;
+  margin-left: 1rem; /* Espacio entre imagen y texto */
+}
+
+.card-image-sobre-nosotros img {
+  max-width: 100%; /* Ajustar el ancho máximo de la imagen */
+  height: auto; /* Altura automática según el ancho */
+}
+
+.card-sobre-nosotros p {
+  font-size: 20px; /* Tamaño del párrafo */
+  line-height: 1.6; /* Altura de línea */
+}
+
+.card-sobre-nosotros-extra {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Para que las tarjetas se envuelvan en dispositivos más pequeños */
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card-extra {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Ancho máximo de cada tarjeta */
+  overflow: hidden; /* Para asegurar que la imagen ocupe todo el espacio */
+}
+
+.card-extra img {
+  width: 100%; /* La imagen ocupa todo el ancho de su contenedor */
+  height: auto; /* Altura automática según el ancho */
+  display: block; /* Asegura que la imagen se comporte correctamente */
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411); /* Color de fondo del texto */
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-extra h5 {
+  font-size: 20px; /* Tamaño de letra para el título aumentado */
+  margin-bottom: 10px; /* Espacio inferior para separar el título del texto */
+}
+.card-extra p {
+  font-size: 16px; /* Tamaño de letra para la descripción aumentado */
+  line-height: 1.4; /* Espaciado entre líneas */
+  margin-bottom: 15px; /* Espacio inferior para separar los párrafos */
+}
+/* -------------------------------------------------------------------- */
+/* ------------------------------------------------- Campañas------------------------------------------------- */
+.main-content-campañas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-campañas {
+  display: flex;
+  flex-direction: row-reverse; /* Inicia con las imágenes a la derecha en desktop */
+  margin: 1rem 0;
+  width: 80%; /* Ancho ajustado, puedes cambiarlo según tu diseño */
+  border-radius: 8px;
+  overflow: hidden;
+  height: 400px; /* Altura fija para todas las cartas */
+}
+
+.card-campañas-image,
+.card-text-campañas {
+  width: 50%;
+}
+
+.card-campañas-image img {
+  width: 100%;
+  height: 100%; /* Hacer que la imagen llene toda la altura del contenedor */
+  object-fit: cover; /* Asegurar que la imagen cubra el espacio sin deformarse */
+}
+
+.card-text-campañas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box; /* Asegura que el padding no cause overflow */
+}
+
+.card-text-campañas h3 {
+  color: #1f4912; /* Cambiar el color del h3 */
+}
+/* ------------------------------------------------- Campañas------------------------------------------------- */
+/* login page */
+.section-form-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-login {
+  background-image: url("images/GreenPeaceLogo.png");
+  background-size: 150px auto;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 400px;
+  width: 300px;
+  flex-direction: column;
+  background-color: #e3e6e6;
+  border: 1px solid rgba(82, 78, 78, 0.342);
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.form-login label {
+  font-size: 1.15rem;
+}
+.form-login input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  padding: 0.6rem;
+}
+.form-login input:focus {
+  outline: none;
+}
+.form-login input[type="submit"] {
+  margin-top: 1rem;
+  border: 1px solid rgb(117, 114, 114);
+  cursor: pointer;
+}
+
+/* administrador vision en header */
+.administrator {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(194, 28, 28);
+  fill: rgb(194, 28, 28);
+  border-radius: 100%;
+}
+.administrator {
+  text-decoration: none; /*Cambie esto por que si no se ven en azul los links*/
+  font-size: 18.5px;
+  list-style: none;
+  font-weight: 500;
+  padding: 0.8rem;
+  cursor: pointer;
+  position: relative;
+}
+.adminOpen {
+  margin-right: 0;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  transition: all 0.3s ease-in;
+  left: 1rem;
+  width: 220px;
+  height: auto;
+  border-radius: 0;
+  top: 46px;
+  background-color: #fcffff;
+  box-shadow: 3px 3px 3px 0px rgba(185, 179, 179, 0.342);
+  z-index: 3;
+  gap: 1.5rem;
+}
+.adminOpen li {
+  cursor: pointer;
+  list-style: none;
+  padding: 15px;
 }
 /* mediaquerys home-hero*/
 @media (max-width: 800px) {
@@ -340,4 +542,57 @@ footer {
     width: 30px;
     height: 30px;
   }
+  /* -.--------------------------------------- */
+  /* Sobrenosotros mediaQuerys */
+  .card-sobre-nosotros-extra {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-extra {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .card-text {
+    position: static;
+    background-color: initial;
+    color: initial;
+    padding: 10px;
+    opacity: 1;
+    transition: none;
+  }
+
+  .card-sobre-nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-sobre-nosotros-text,
+  .card-image-sobre-nosotros {
+    width: 100%;
+    margin: 0; /* Eliminar los márgenes laterales */
+  }
+  /* -.--------------------------------------- */
+  /* media querys campañas */
+  .card-campañas {
+    flex-direction: column; /* Cambia a column para móviles */
+    height: auto; /* Altura automática */
+  }
+
+  .card-campañas-image,
+  .card-text-campañas {
+    width: 100%; /* Ancho completo en móviles */
+  }
+
+  .card-campañas-image {
+    order: -1; /* Cambia el orden para poner la imagen arriba en móviles */
+    height: 200px; /* Altura fija para las imágenes en móviles */
+  }
+
+  .card-text-campañas {
+    order: 1; /* Cambia el orden para poner el texto abajo en móviles */
+  }
+  /* ---------------------------------------------------------- */
 }

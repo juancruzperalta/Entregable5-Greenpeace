@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundación GreenPeace</title>
-    <link rel="stylesheet" href="styleCampanas.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav class="hero-nav">
         <div class="nav-logo">
           <img src="images/GreenPeaceLogo.png" alt="" />
+          <li class="administrator" style="display: none">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7H162.5c0 0 0 0 .1 0H168 280h5.5c0 0 0 0 .1 0H417.3c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2H224 204.3c-12.4 0-20.1 13.6-13.7 24.2z"
+              />
+            </svg>
+          </li>
+          <ul class="adminOpen" style="display: none">
+            <li>Crear nueva noticia</li>
+            <li>Borrar noticia nueva</li>
+            <li>Modificar noticia</li>
+            <li id="deslogear">Deslogear</li>
+          </ul>
         </div>
         <div class="hamburg-nav">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -22,7 +35,9 @@
         <div class="nav-li">
           <li class="hero-nav-li"><a href="index.html">Inicio</a></li>
           <li class="hero-nav-li"><a href="campanas.html">Campañas</a></li>
-          <li class="hero-nav-li"><a href="sobrenosotros.html">Sobre nosotros</a></li>
+          <li class="hero-nav-li">
+            <a href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
           <li class="hero-nav-li"><a href="contacto.html">Contacto</a></li>
           <li class="hero-nav-li donate">DONÁ</li>
           <li class="hero-nav-li search">
@@ -39,40 +54,66 @@
         </div>
       </nav>
     </header>
-    <section class="main-content">
-        <article class="card">
-            <div class="card-image">
+    <section class="main-content-campañas">
+        <article class="card-campañas">
+            <div class="card-campañas-image">
                 <img src="images/contaminacionEnElOceano.jpg" alt="Imagen de Contaminación en el Océano">
             </div>
-            <div class="card-text">
+            <div class="card-text-campañas">
                 <h3>Océano</h3>
-                <p>Los océanos son vitales para nuestra vida: nos alimentan y regulan el clima. Es momento de defenderlos para asegurar el futuro de todos.</p>
+                <p>Los océanos son vitales para nuestra vida: nos alimentan y regulan el clima. Es momento de defenderlos para asegurar el futuro de todos.
+                  <ul>
+                <li>
+                 Influyen en los fenómenos meteorológicos más importantes
+                </li>    
+                <li>
+                 Regulan el clima
+                </li>
+                <li>
+                 Nos brindan proteínas, energía, minerales y otros productos esenciales
+                </li>
+                <li>
+                 El balanceo del mar en todo el planeta crea más de la mitad de nuestro oxígeno
+                </li>  
+                <li>
+                 Transportan masas de agua que superan a todos los ríos de la tierra combinados
+                </li>
+                <li>
+                 Son el hábitat y los corredores de migración de ballenas, tiburones, tortugas y otras especies
+                </li>
+                  </ul>
+                </p>
             </div>
         </article>
-        <article class="card">
-            <div class="card-text">
+        <article class="card-campañas">
+            <div class="card-text-campañas">
                 <h3>Bosques</h3>
-                <p>Los bosques estabilizan el clima y mantienen la vida en la Tierra, pero su destrucción no se detiene.</p>
+                <p>Los bosques estabilizan el clima y mantienen la vida en la Tierra, pero su destrucción no se detiene.
+                  Los bosques nativos concentran más de la mitad de la biodiversidad terrestre del planeta.
+                   De ellos obtenemos bienes y servicios indispensables para nuestra supervivencia, como alimentos, maderas y medicinas. Además, son el hogar y sustento de miles de comunidades indígenas y campesinas.  Estos ecosistemas tienen un rol fundamental en la regulación climática, el mantenimiento de las fuentes y caudales de agua y la conservación de los suelos.
+                </p>
             </div>
-            <div class="card-image">
+            <div class="card-campañas-image">
                 <img src="images/sinBosquesNoHayAnimales.jpg" alt="Imagen de Sin Bosques No Hay Animales">
             </div>
         </article>
-        <article class="card">
-            <div class="card-image">
+        <article class="card-campañas">
+            <div class="card-campañas-image">
                 <img src="images/LosGlaciaresNoSeToan.jpg" alt="Imagen de Los Glaciares No Se Toquen">
             </div>
-            <div class="card-text">
+            <div class="card-text-campañas">
                 <h3>Los Glaciares No Se Toquen</h3>
-                <p>Descripción sobre la protección de los glaciares.</p>
+                <p>Los glaciares son uno de los principales patrimonios ambientales de nuestro país. Son parte integral del ciclo del agua y también íconos de la lucha ambiental.
+Se trata de fuentes de agua que acumulan precipitaciones y las liberan gradualmente manteniendo ecosistemas en las cuencas en las que se emplazan actuando además como reguladores climáticos.
+Si los conocierámos y entendieramos su valor, nadie podría pensar en destruirlos o en destruir con industrias contaminantes aquello que permite preservarlos o el entorno donde  se emplazan..</p>
             </div>
         </article>
-        <article class="card">
-            <div class="card-text">
+        <article class="card-campañas">
+            <div class="card-text-campañas">
                 <h3>Explosión Tóxica</h3>
-                <p>Descripción sobre los peligros de las explosiones tóxicas.</p>
+                <p>El 20 de marzo pasado, se produjo en San Nicolás, provincia de Buenos Aires, una explosión con liberación de agrotóxicos en una de las plantas de la empresa ATANOR.   Durante el año 2016, la empresa fue clausurada por los altos riesgos que significaba para los habitantes la producción de sus agrotóxicos. Y, a pesar de tener una sentencia judicial en el 2023 por contaminar y provocar severos daños en la salud, ATANOR no solo continuó con sus actividades, sino que construyó una nueva planta, donde se produjo la explosión este año..</p>
             </div>
-            <div class="card-image">
+            <div class="card-campañas-image">
                 <img src="images/explosionToxica.jpg" alt="Imagen de Explosión Tóxica">
             </div>
         </article>
@@ -114,7 +155,7 @@
             ></a>
           </ul>
           <ul class="ul-footer-info">
-            <a class="li-footer-info" href="contacto.html" target="_blank"
+            <a class="li-footer-info" href="campanas.html" target="_blank"
               >Campañas</a
             >
             <a class="li-footer-info" href="sobrenosotros.html" target="_blank"
