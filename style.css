@@ -291,6 +291,32 @@ footer {
 }
 /* ------------------------Sobre nosotros -----------------------------*/
 /* Sobre Nosotros */
+/*-------------------------Contacto--------------------------------------*/
+.contacto-title{
+  padding: 3rem;
+}
+.contacto-title p{
+  font-size: 1.4em;
+}
+.contacto-title h2{
+  color: #1f4912;
+  font-size: 3em;
+}
+.contacto{
+  padding: 3rem;
+
+}
+.resaltado{
+  font-weight: bold;
+}
+.contactos h3{
+  color: #1f4912;
+  font-size: 2em;
+}
+.contacto p{
+  font-size: 1.4em;
+}
+/*-------------------------Contacto--------------------------------------*/
 .main-content {
   display: flex;
   flex-direction: column;
