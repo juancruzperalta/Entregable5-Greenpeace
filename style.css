@@ -292,28 +292,27 @@ footer {
 /* ------------------------Sobre nosotros -----------------------------*/
 /* Sobre Nosotros */
 /*-------------------------Contacto--------------------------------------*/
-.contacto-title{
+.contacto-title {
   padding: 3rem;
 }
-.contacto-title p{
+.contacto-title p {
   font-size: 1.4em;
 }
-.contacto-title h2{
+.contacto-title h2 {
   color: #1f4912;
   font-size: 3em;
 }
-.contacto{
+.contacto {
   padding: 3rem;
-
 }
-.resaltado{
+.resaltado {
   font-weight: bold;
 }
-.contactos h3{
+.contactos h3 {
   color: #1f4912;
   font-size: 2em;
 }
-.contacto p{
+.contacto p {
   font-size: 1.4em;
 }
 /*-------------------------Contacto--------------------------------------*/
@@ -516,14 +515,79 @@ footer {
   list-style: none;
   padding: 15px;
 }
+#searchInput {
+  width: 120px;
+  height: 40px;
+  position: relative;
+}
+#suggestions {
+  top: 5.5%;
+  left: 79%;
+  background-color: #e3e6e6;
+  width: 180px;
+  height: auto;
+  position: absolute;
+}
 /* mediaquerys home-hero*/
 @media (max-width: 800px) {
   .two-article {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
+  #searchInput {
+    width: 100px;
+    height: 40px;
+    position: relative;
+  }
+  #suggestions {
+    top: 100%;
+    left: 0%;
+    background-color: #e3e6e6;
+    width: 180px;
+    height: auto;
+    position: absolute;
+  }
+  .hero-nav {
+    box-shadow: 3px 3px 3px 3px rgba(185, 179, 179, 0.342);
+  }
+  .nav-li {
+    display: none;
+  }
+  .nav-li.activeHamburgues {
+    transition: all 0.3s ease-in;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.15rem;
+    width: 150px;
+    top: 64px;
+    background-color: #fcffff;
+    box-shadow: 3px 3px 3px 0px rgba(185, 179, 179, 0.342);
+    z-index: 3;
+  }
+  .hamburg-nav {
+    display: flex;
+    width: 30px;
+    margin-right: 1rem;
+    height: 30px;
+    cursor: pointer;
+  }
 }
 @media only screen and (max-width: 600px) {
+  #searchInput {
+    width: 100px;
+    height: 40px;
+    position: relative;
+  }
+  #suggestions {
+    top: 100%;
+    left: 0%;
+    background-color: #e3e6e6;
+    width: 180px;
+    height: auto;
+    position: absolute;
+  }
   .two-article {
     gap: 1rem;
     grid-template-columns: repeat(1, 1fr);

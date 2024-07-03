@@ -39,7 +39,21 @@
             <a href="sobrenosotros.html">Sobre nosotros</a>
           </li>
           <li class="hero-nav-li"><a href="contacto.html">Contacto</a></li>
-          <li class="hero-nav-li donate">DONÁ</li>
+          <li class="hero-nav-li donate">
+            <a
+              href="https://app.greenpeace.org.ar/coupon/regular/forms/registration?utm_source=web&utm_medium=openSpace&utm_content=banner_home&utm_term=todos&utm_campaign=Institucional&_ga=2.223874075.1846961723.1719697129-924410726.1718218111&_gac=1.90974824.1719429317.CjwKCAjw-O6zBhASEiwAOHeGxWW0s3GY6BzreyjB_FDIliIgQuqwfJRxjuy3Mj08YCf7xbo9e6WmJxoC41AQAvD_BwE"
+              target="_blank"
+              >DONÁ</a
+            >
+          </li>
+          <input
+            class="hero-nav-li"
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            style="display: none"
+          />
+          <div id="suggestions"></div>
           <li class="hero-nav-li search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +70,7 @@
     </header>
     <section class="main-content-campañas">
         <article class="card-campañas">
-            <div class="card-campañas-image">
+            <div class="card-campañas-image" id="oceano">
                 <img src="images/contaminacionEnElOceano.jpg" alt="Imagen de Contaminación en el Océano">
             </div>
             <div class="card-text-campañas">
@@ -86,7 +100,7 @@
             </div>
         </article>
         <article class="card-campañas">
-            <div class="card-text-campañas">
+            <div class="card-text-campañas" id="bosque">
                 <h3>Bosques</h3>
                 <p>Los bosques estabilizan el clima y mantienen la vida en la Tierra, pero su destrucción no se detiene.
                   Los bosques nativos concentran más de la mitad de la biodiversidad terrestre del planeta.
@@ -98,7 +112,7 @@
             </div>
         </article>
         <article class="card-campañas">
-            <div class="card-campañas-image">
+            <div class="card-campañas-image" id="glaciares">
                 <img src="images/LosGlaciaresNoSeToan.jpg" alt="Imagen de Los Glaciares No Se Toquen">
             </div>
             <div class="card-text-campañas">
@@ -109,7 +123,7 @@ Si los conocierámos y entendieramos su valor, nadie podría pensar en destruirl
             </div>
         </article>
         <article class="card-campañas">
-            <div class="card-text-campañas">
+            <div class="card-text-campañas" id="atanor">
                 <h3>Explosión Tóxica</h3>
                 <p>El 20 de marzo pasado, se produjo en San Nicolás, provincia de Buenos Aires, una explosión con liberación de agrotóxicos en una de las plantas de la empresa ATANOR.   Durante el año 2016, la empresa fue clausurada por los altos riesgos que significaba para los habitantes la producción de sus agrotóxicos. Y, a pesar de tener una sentencia judicial en el 2023 por contaminar y provocar severos daños en la salud, ATANOR no solo continuó con sus actividades, sino que construyó una nueva planta, donde se produjo la explosión este año..</p>
             </div>
@@ -167,5 +181,6 @@ Si los conocierámos y entendieramos su valor, nadie podría pensar en destruirl
     </section>
 
     <script src="greenpeace.js"></script>
+    <script src="inputBusqueda.js"></script>
   </body>
 </html>

@@ -39,7 +39,21 @@
             <a href="sobrenosotros.html">Sobre nosotros</a>
           </li>
           <li class="hero-nav-li"><a href="contacto.html">Contacto</a></li>
-          <li class="hero-nav-li donate">DONÁ</li>
+          <li class="hero-nav-li donate">
+            <a
+              href="https://app.greenpeace.org.ar/coupon/regular/forms/registration?utm_source=web&utm_medium=openSpace&utm_content=banner_home&utm_term=todos&utm_campaign=Institucional&_ga=2.223874075.1846961723.1719697129-924410726.1718218111&_gac=1.90974824.1719429317.CjwKCAjw-O6zBhASEiwAOHeGxWW0s3GY6BzreyjB_FDIliIgQuqwfJRxjuy3Mj08YCf7xbo9e6WmJxoC41AQAvD_BwE"
+              target="_blank"
+              >DONÁ</a
+            >
+          </li>
+          <input
+            class="hero-nav-li"
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            style="display: none"
+          />
+          <div id="suggestions"></div>
           <li class="hero-nav-li search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +82,7 @@
       </div>
 
       <article class="one-article">
-        <div class="one-image">
+        <div class="one-image" id="ambiente">
           <img
             src="/images/destruirBosquesCrimen.webp"
             alt="Destruccion de bosques"
@@ -78,7 +92,7 @@
             Ningun candidato asume la transendencia de los problemas AMBIENTALES
           </p>
         </div>
-        <div class="two-image">
+        <div class="two-image" id="petroleo">
           <img
             src="/images/d9cdfd49-gpa-derrame-petroleo-8.webp"
             alt="Derrame de petróleo"
@@ -89,13 +103,13 @@
       </article>
       <article class="two-article">
         <div class="card-image active">
-          <b class="card-title">Frenemos la contaminación</b>
+          <b class="card-title" id="contaminacion">Frenemos la contaminación</b>
           <div class="card-info">
             <p>La contaminación actual de los océanos es mayor que nunca</p>
           </div>
         </div>
         <div class="card-image">
-          <b class="card-title">La deforestación</b>
+          <b class="card-title" id="bosque">La deforestación</b>
           <div class="card-info">
             <p>
               La deforestación está destruyendo el planeta #ApoyaEstaCampaña
@@ -103,7 +117,7 @@
           </div>
         </div>
         <div class="card-image">
-          <b class="card-title">Los glaciares</b>
+          <b class="card-title" id="glaciares">Los glaciares</b>
           <div class="card-info">
             <p>
               Estámos perdiendo la gran parte de los glaciares.
@@ -113,7 +127,7 @@
         </div>
         <div class="card-image">
           <b class="card-title">Atanor</b>
-          <div class="card-info">
+          <div class="card-info" id="atanor">
             <p>Una explosión de ATANOR, algo super tóxico!</p>
           </div>
         </div>
@@ -167,5 +181,6 @@
     </section>
 
     <script src="greenpeace.js"></script>
+    <script src="inputBusqueda.js"></script>
   </body>
 </html>
