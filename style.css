@@ -528,6 +528,9 @@ footer {
   height: auto;
   position: absolute;
 }
+#suggestions.campanasEdit {
+  top: 3%;
+}
 /* mediaquerys home-hero*/
 @media (max-width: 800px) {
   .two-article {
