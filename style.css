@@ -591,6 +591,9 @@ footer {
     height: auto;
     position: absolute;
   }
+  #suggestions.campanasEdit {
+    top: 100%;
+  }
   .two-article {
     gap: 1rem;
     grid-template-columns: repeat(1, 1fr);
