@@ -14,9 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (usuarioLogeado) {
     adminView.style.display = "flex";
+    adminInfo.style.display = "flex";
   } else {
     adminView.style.display = "none";
     adminOpen.style.display = "none";
+    adminInfo.style.display = "none";
   }
 });
 deslogueo.addEventListener("click", () => {
@@ -26,6 +28,7 @@ deslogueo.addEventListener("click", () => {
 });
 const adminView = document.querySelector(".administrator");
 const adminOpen = document.querySelector(".adminOpen");
+const adminInfo = document.querySelector(".adminInfo");
 adminView.addEventListener("click", (e) => {
   if (adminOpen.style.display === "none") {
     adminOpen.style.display = "flex";
@@ -33,4 +36,5 @@ adminView.addEventListener("click", (e) => {
     adminOpen.style.display = "none";
   }
 });
+
 // Login-----

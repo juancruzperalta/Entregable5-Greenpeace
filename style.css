@@ -6,6 +6,7 @@ body {
   margin: 0;
   position: relative;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
 }
 * {
   box-sizing: border-box;
@@ -95,11 +96,12 @@ a {
   flex-direction: row;
   align-items: center;
   margin: 1rem;
+  justify-content: center;
   gap: 1rem;
 }
 .title-primary p {
   align-content: center;
-  width: 80%;
+  width: 60%;
   text-align: center;
   height: 120px;
   border-left: 3px solid #66cc00;
@@ -146,6 +148,9 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   justify-content: center;
   align-items: center;
+}
+.container {
+  width: 1200px;
 }
 .card-image {
   width: 180px;
@@ -478,6 +483,56 @@ footer {
 }
 
 /* administrador vision en header */
+.adminInfo {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 1200px;
+  border-radius: 0.25rem;
+  gap: 1rem;
+  background-color: #1f4912;
+  box-shadow: 4px 4px 4px 4px rgba(7, 7, 7, 0.582);
+  position: relative;
+}
+.adminInfo h1 {
+  position: absolute;
+  font-size: 140px;
+  margin: 0;
+  z-index: 1;
+  color: rgba(185, 179, 179, 0.699);
+  rotate: 10deg;
+}
+.adminInfo input {
+  box-shadow: 4px 4px 4px 4px rgba(7, 7, 7, 0.582);
+  border-radius: 0.25rem;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.226);
+  transition: all 0.3s ease-in-out;
+  color: black;
+  padding: 0.5rem;
+  width: 400px;
+  height: 100px;
+}
+.adminInfo input::placeholder {
+  color: black;
+}
+.adminInfo input:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+.select-admin-info:focus {
+  outline: none;
+  background-color: rgb(255, 255, 255);
+}
+.select-admin-info {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.582);
+  border-radius: 0.25rem;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
 .administrator {
   width: 50px;
   height: 50px;
@@ -689,6 +744,29 @@ footer {
 
   .card-text-campañas {
     order: 1; /* Cambia el orden para poner el texto abajo en móviles */
+  }
+  .adminInfo {
+    flex-direction: column;
+    width: 80%;
+  }
+  .adminInfo input {
+    width: 200px;
+  }
+  .adminInfo h1 {
+    font-size: 40px;
+  }
+  .title-primary {
+    flex-direction: column;
+  }
+  .title-primary p {
+    width: 250px;
+    height: 300px;
+  }
+  .container {
+    width: 90%;
+  }
+  .main-content {
+    padding: 2rem;
   }
   /* ---------------------------------------------------------- */
 }
