@@ -589,11 +589,22 @@ footer {
 #suggestions.campanasEdit {
   top: 3%;
 }
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
 /* mediaquerys home-hero*/
 @media (max-width: 800px) {
   .two-article {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 100%;
+  }
+  .title-primary p {
+    height: auto;
   }
   #searchInput {
     width: 100px;
