@@ -595,7 +595,10 @@ footer {
   }
 }
 /* mediaquerys home-hero*/
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  #suggestions.campanasEdit {
+    top: 100%;
+  }
   .two-article {
     gap: 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -774,7 +777,7 @@ footer {
   }
   .title-primary p {
     width: 250px;
-    height: 300px;
+    height: auto;
   }
   .container {
     width: 90%;
