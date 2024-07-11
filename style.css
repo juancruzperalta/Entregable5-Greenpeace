@@ -320,6 +320,9 @@ footer {
 .contacto p {
   font-size: 1.4em;
 }
+#imgGreenPeace {
+  width: 20%;
+}
 /*-------------------------Contacto--------------------------------------*/
 .main-content {
   display: flex;
@@ -767,6 +770,9 @@ footer {
   }
   .main-content {
     padding: 2rem;
+  }
+  #imgGreenPeace {
+    width: 60%;
   }
   /* ---------------------------------------------------------- */
 }
